@@ -15,7 +15,7 @@ It has been tested to be **accurate**, **lightweight** and **fast**. OSC is so f
 # Toy Setup
 There are currently two protocols available for VRCLovenseConnect: "Lovense" and "Buttplug".
 
-When your toys are connected, simply launch the program after VRChat is open.
+When your toys are connected, simply launch the program after loading your avatar.
 
 ## Buttplug.io
 Simply connect your toys to your PC through a cable or Bluetooth. Lovense toys should work with basic features in this protocol too.
@@ -116,11 +116,7 @@ This setup will make sure that you and others can control your toys without any 
 # What's next?
 More improvements on responsiveness.
 
-# Documentation
-VRChat OSC: https://docs.vrchat.com/docs/osc-overview
-
-VRChat Contacts: https://docs.vrchat.com/v2022.1.2/docs/contacts
-
+# Resources
 Dynamic Penetration System: https://raliv.gumroad.com/l/lwthuB
 
 Intiface Desktop: https://intiface.com/desktop/
