@@ -1,7 +1,7 @@
 # VRCLovenseConnect
 VRCLovenseConnect is a .NET implementation of the Lovense Connect API and Buttplug.io to synchronize **any connected toy** with an avatar through OSC messages.
 
-# Quick start (DPS required)
+# Quick setup (DPS required)
 - Download the program and the Unity package [here](https://github.com/PingerSurprise/VrcLovenseConnect/releases/download/v0.4.5-beta/VRCLC_Prefabs.unitypackage).
 - Open your Unity project, import the Unity package.
 - In the Raliv DPS folder, there should be new prefabs available.
