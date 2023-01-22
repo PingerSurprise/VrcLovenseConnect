@@ -125,7 +125,7 @@ For each orifice on which you want toy interactions enabled:
 This setup will make sure that you and others can control your toys without any interference. Tags can be changed to be shared only to a few people for a more private use, kind of like a password.
 
 # What's next?
-More improvements on responsiveness.
+More clarity, maybe a GUI version someday?
 
 # Resources
 Dynamic Penetration System: https://raliv.gumroad.com/l/lwthuB
