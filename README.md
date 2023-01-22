@@ -1,16 +1,27 @@
 # VRCLovenseConnect
 VRCLovenseConnect is a .NET implementation of the Lovense Connect API and Buttplug.io to synchronize **any connected toy** with an avatar through OSC messages.
 
-# NEW! Prefabs for an easy DPS-compatible setup available [here](https://github.com/PingerSurprise/VrcLovenseConnect/releases/download/v0.4.5-beta/VRCLC_Prefabs.unitypackage)!
-Just drop both VRCLC_Penetrator prefabs in your penetrator object, and both VRCLC_Orifice prefabs in your orifice object(s), adjust the radius to your penetrator's length and your avatar is ready! More details in the DPS section.
-
-## What does it do exactly?
-With the power of **OSC**, your avatar sends values between 0.0 and 1.0 to this program through UDP. This value is converted and transferred to either a Buttplug.io compatible toy through Bluetooth, or to a phone with the Lovense Connect app within the same network through HTTP, which will transfer commands to each connected toys.
-
-It has been tested to be **accurate**, **lightweight** and **fast**. OSC is so fast indeed that I had to set a limit of processed messages to have less delay.
+# Quick start (DPS required)
+- Download the program and the Unity package [here](https://github.com/PingerSurprise/VrcLovenseConnect/releases/download/v0.4.5-beta/VRCLC_Prefabs.unitypackage).
+- Open your Unity project, import the Unity package.
+- In the Raliv DPS folder, there should be new prefabs available.
+- Drag and drop both VRCLC_Penetrator prefabs in your penetrator object. You can add as much tags as you want in the Receiver object.
+- Drag and drop both VRCLC_Orifice prefabs in all your orifice objects that you want to sync your toy with. You can add as much tags as you want in the Receiver objects.
+- For orifices that should activate only other people's toys, drag and drop VRCLC_Orifice_Sender prefab in the according orifice objects.
+- Adjust the radius in the VRCLC_Penetrator_Receiver to your penetrator's length (found either in the DPS material or with the Z position of the Tip light object).
+- Your avatar is ready! Time to upload it.
+- Pair your toy with your PC through Bluetooth (refer to its manual to know how to pair it).
+- Get in VR and load your avatar
+- Run the program, it should automatically detect your toy. If not, make sure your firewall doesn't block port 9000 and 9001 (the default ports for OSC).
+- You're done, have fun!
 
 ## Requirements
-- A bluetooth dongle connected to your PC **OR** Lovense Connect for Android or iOS (the PC version requires a specific Lovense Bluetooth dongle).
+A bluetooth dongle connected to your PC **OR** Lovense Connect for Android or iOS (the PC version requires a specific Lovense Bluetooth dongle).
+
+## What does it do exactly?
+With the power of **OSC**, your avatar sends values between 0 and 1 to this program. This value is converted and transferred to either a Buttplug.io compatible toy through Bluetooth, or to a phone with the Lovense Connect app within the same network, which will transfer commands to each connected toys.
+
+It has been tested to be **accurate**, **lightweight** and **fast**. OSC itself is so fast indeed that I had to set a limit of processed messages.
 
 # Toy Setup
 There are currently two protocols available for VRCLovenseConnect: "Lovense" and "Buttplug".
