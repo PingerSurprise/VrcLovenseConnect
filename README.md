@@ -1,3 +1,7 @@
+# VRCLovenseConnect is discontinued, go check [OscGoesBrrr](https://github.com/OscToys/OscGoesBrrr) instead.
+
+==
+
 # VRCLovenseConnect
 VRCLovenseConnect is a .NET implementation of the Lovense Connect API and Buttplug.io to synchronize **any connected toy** with an avatar through OSC messages.
 
